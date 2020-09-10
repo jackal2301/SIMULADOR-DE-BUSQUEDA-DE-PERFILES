@@ -14,7 +14,7 @@
     <p>Seleccione una Regional del siguiente menú:</p>
     <p>Regional:
       <select id="lista1">
-        <option value="0">Seleccione:</option>
+        <option value="0">Selecciona:</option>
         <?php
           $query = $mysqli -> query ("SELECT DISTINCT Cod_Centro, Regional FROM centro_prog");
           while ($valores = mysqli_fetch_array($query)) {
@@ -26,7 +26,7 @@
 	<p>Seleccione el sector del siguiente menú:</p>
     <p>Sector:
       <select id="lista2">
-		<option value="0">Seleccione:</option>
+		<option value="0">Selecciona:</option>
         <?php
           $query = $mysqli -> query ("SELECT DISTINCT Red FROM centro_prog");
           while ($valores = mysqli_fetch_array($query)) {
